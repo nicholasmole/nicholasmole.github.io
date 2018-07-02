@@ -1,12 +1,8 @@
-import {combineReducers} from 'redux-immutable';
-import {routerReducer} from 'react-router-redux';
-import location from './location';
-import app from './app';
+import {combineReducers} from 'redux';
+import currentTitle from './title';
 
 const Ducks = combineReducers({
-	routing: routerReducer,
-	location,
-	app
+	currentTitle
 });
 
 export default Ducks;
