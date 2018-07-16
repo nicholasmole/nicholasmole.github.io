@@ -13,16 +13,44 @@ const AsyncSkills = asyncComponent(() => import('./skills/skills'));
 const AsyncContact = asyncComponent(() => import('./contact/contact'));
 
 class App extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			loaded: false
+		};
+	}
+
+	handleLoad = () => {
+		this.setState({
+			loaded: true
+		});
+	}
+
+	componentDidMount() {
+		window.addEventListener('load', this.handleLoad);
+		if (document.readyState === 'complete') {
+			this.handleLoad();
+		}
+	}
+
 	render() {
+		const {
+			loaded
+		} = this.state;
 		return (
 			<div id={styles.app}>
 				<div id="wrap">
 					<Header/>
 					<AsyncHome/>
-					<AsyncWhy/>
-					<AsyncAbout/>
-					<AsyncProjects/>
-					<AsyncSkills/>
+					{
+						loaded &&
+						<div>
+							<AsyncWhy/>
+							<AsyncAbout/>
+							<AsyncProjects/>
+							<AsyncSkills/>
+						</div>
+					}
 					<AsyncContact/>
 				</div>
 			</div>
