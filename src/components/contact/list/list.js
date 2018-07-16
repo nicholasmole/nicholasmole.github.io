@@ -5,14 +5,16 @@ import Contact from './contact/contact';
 const List = ({contacts}) => (
 	<div className={styles['contact-list_container']}>
 		<div>
+			{console.log(contacts)}
 			{
 				contacts &&
 				contacts.map(contact => (
-					<Contact
-						key={contact}
-						title={contact.title}
-						link={contact.link}
-					/>
+					<div key={contact.title}>
+						<Contact
+							title={contact.title}
+							link={contact.link}
+						/>
+					</div>
 				))
 			}
 		</div>
