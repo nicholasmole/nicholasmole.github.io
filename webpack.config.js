@@ -18,7 +18,7 @@ let browserConfig = {
 	},
 	output: {
 		path: path.resolve(__dirname, './public'),
-		filename: isDev ? '[name].js' : '[name].[chunkhash].js',
+		filename: isDev ? '[name].js' : '[name].js',
 		publicPath: isDev ? '/' : './'
 	},
 	module: {
