@@ -18,7 +18,7 @@ let browserConfig = {
 	},
 	output: {
 		path: path.resolve(__dirname, './public'),
-		filename: isDev ? '[name].js' : '[name].[chunkhash].js',
+		filename: isDev ? '[name].js' : '[name].js',
 		publicPath: isDev ? '/' : './'
 	},
 	module: {
@@ -55,6 +55,7 @@ let browserConfig = {
 								camelCase: true,
 								minimize: !isDev,
 								importLoaders: 1,
+								// localIdentName: isDev ? '[local]' : '[hash:5]',
 								localIdentName: isDev ? '[local]' : '[hash:5]',
 								discardComments: {
 									removeAll: true
@@ -123,7 +124,7 @@ let browserConfig = {
 			minChunks: Infinity
 		}),
 		new ExtractTextPlugin({
-			filename: isDev ? 'styles.css' : 'styles.[contenthash].css',
+			filename: isDev ? 'styles.css' : 'styles.css',
 			allChunks: true,
 			ignoreOrder: true
 		}),

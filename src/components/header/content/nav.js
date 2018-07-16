@@ -6,7 +6,7 @@ const Nav = () => (
 		<nav>
 			<ul>
 				<li>
-					<a className={styles['header-nav-small']}>Mole Code</a>
+					<a className={styles['header-nav-small']}>Nick Mole</a>
 				</li>
 			</ul>
 		</nav>

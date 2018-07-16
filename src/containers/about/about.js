@@ -11,7 +11,7 @@ class About extends Component {
 		return (
 			<div id="about" className={styles.about_container}>
 				<Title
-					title="About Mole Code"
+					title="About Mole"
 				/>
 				<Pic/>
 				<Content/>

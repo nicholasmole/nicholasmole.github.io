@@ -1,5 +1,5 @@
 import {h, Component} from 'preact';
-import {connect} from 'preact-redux';
+// import {connect} from 'preact-redux';
 import {updateTitle} from '../../ducks/title';
 import styles from './title.scss';
 
@@ -22,7 +22,6 @@ class Title extends Component {
 			myStore,
 			currentTitle
 		} = this.props;
-		console.log(currentTitle);
 		return (
 			<div className={styles.title_h1}>
 					<h1>{currentTitle}</h1>
@@ -31,4 +30,5 @@ class Title extends Component {
 	}
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Title);
+// export default connect(mapStateToProps, mapDispatchToProps)(Title);
+export default Title;

@@ -7,3 +7,9 @@
 	background-size: cover;
 	box-shadow: inset 10000px 0px 2px rgba(0,0,0,0.5);
 }
+
+@supports (-webkit-overflow-scrolling: touch) {
+	#app {
+		-webkit-overflow-scrolling: touch;
+	}
+}

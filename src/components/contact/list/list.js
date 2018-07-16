@@ -8,11 +8,12 @@ const List = ({contacts}) => (
 			{
 				contacts &&
 				contacts.map(contact => (
-					<Contact
-						key={contact}
-						title={contact.title}
-						link={contact.link}
-					/>
+					<div key={contact.title}>
+						<Contact
+							title={contact.title}
+							link={contact.link}
+						/>
+					</div>
 				))
 			}
 		</div>
