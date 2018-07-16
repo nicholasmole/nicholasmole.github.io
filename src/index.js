@@ -1,15 +1,16 @@
-import {Provider} from 'preact-redux';
+// import {Provider} from 'preact-redux';
 import {h, Component, render} from 'preact';
 import App from './containers/app';
 import './css/utils/global.scss';
-import {createStore} from 'redux';
-import reducer from './ducks/root';
+// import {createStore} from 'redux';
+// import reducer from './ducks/root';
 
-const store = createStore(reducer);
+// const store = createStore(reducer);
 
 render(
-	<Provider store={store}>
+	// <Provider store={store}>
 		<App/>
-	</Provider>,
+	// </Provider>,
+	,
 	document.getElementById('root')
 );

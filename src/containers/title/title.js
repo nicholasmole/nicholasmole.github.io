@@ -1,5 +1,5 @@
 import {h, Component} from 'preact';
-import {connect} from 'preact-redux';
+// import {connect} from 'preact-redux';
 import {updateTitle} from '../../ducks/title';
 import styles from './title.scss';
 
@@ -31,4 +31,5 @@ class Title extends Component {
 	}
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Title);
+// export default connect(mapStateToProps, mapDispatchToProps)(Title);
+export default Title;
