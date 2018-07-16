@@ -124,7 +124,7 @@ let browserConfig = {
 			minChunks: Infinity
 		}),
 		new ExtractTextPlugin({
-			filename: isDev ? 'styles.css' : 'styles.[contenthash].css',
+			filename: isDev ? 'styles.css' : 'styles.css',
 			allChunks: true,
 			ignoreOrder: true
 		}),
