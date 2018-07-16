@@ -1,0 +1,19 @@
+.about-content_container {
+	margin-right: 3.125%;
+	margin-left: 3.125%;
+	margin-bottom: 15px;
+	font-size: 1em;
+	line-height: 1.5em;
+	p {
+		margin: 1.75em 0;
+		line-height: 1.75em;
+	}
+}
+@media only screen and (min-width: 769px) {
+
+	.about-content_container {
+		font-size: 1.25em;
+		line-height: 1.5em;
+		margin-bottom: 62px;
+	}
+}

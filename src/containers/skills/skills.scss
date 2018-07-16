@@ -1,0 +1,12 @@
+@import '../../css/utils/variables.scss';
+
+.skills_container {
+	background: $myWhite;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	.skills_container_image {
+		margin: 16px auto;
+    width: 400px;
+    display: block;
+	}
+}

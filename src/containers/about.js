@@ -7,7 +7,7 @@ class HomePage extends Component {
 	render() {
 		return (
 			<div>
-				<div id="about" className={`${appStyle.app} ${styles.aboutus}`}>
+				<div id="about2" className={`${styles.app} ${styles.aboutus}`}>
 					ABOUT
 				</div>
 			</div>

@@ -1,0 +1,14 @@
+@import '../../../css/utils/variables.scss';
+
+.home-links_container {
+	background: $myWhite;
+	padding: 8px;
+}
+@media only screen and (min-width: 769px) {
+	.home-links_container {
+		width: 769px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+	}
+}

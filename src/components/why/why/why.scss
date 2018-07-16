@@ -1,0 +1,12 @@
+.why-why_container {
+	text-align: center;
+}
+
+@media only screen and (min-width: 769px) {
+	.why-why_container {
+		display: flex;
+		div {
+			flex: 1 0 0;
+		}
+	}
+}

@@ -1,0 +1,23 @@
+.projects-project_container {
+	ul {
+		width: 106.25%;
+		margin-left: -3.125%;
+		margin-right: -3.125%;
+		zoom: 1;
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 769px) {
+	.projects-project_container {
+		ul {
+			width: 95%;
+			padding-right: 40px;
+			margin-left: 0px;
+			margin-right: 0px;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+	}
+}
