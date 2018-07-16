@@ -9,7 +9,7 @@ import Divider from '../../components/global/divider/divider';
 class Why extends Component {
 	render() {
 		return (
-			<div id="about" className={styles.why_container}>
+			<div id="why" className={styles.why_container}>
 				<Title
 					title="Why you need good web design?"
 				/>
