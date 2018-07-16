@@ -22,7 +22,6 @@ class Title extends Component {
 			myStore,
 			currentTitle
 		} = this.props;
-		console.log(currentTitle);
 		return (
 			<div className={styles.title_h1}>
 					<h1>{currentTitle}</h1>
