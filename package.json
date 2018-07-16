@@ -7,7 +7,8 @@
 	"scripts": {
 		"start": "node_modules/.bin/webpack-dev-server --port 5153 -d --colors --config webpack.config.js --watch ",
 		"start:open": "node_modules/.bin/webpack-dev-server --port 5153 -d --colors --config webpack.config.js --watch --open ",
-		"build": "node_modules/.bin/webpack --config webpack.config.prod.js"
+		"build": "node_modules/.bin/webpack --config webpack.config.prod.js",
+		"deploy": "gh-pages -d public"
 	},
 	"keywords": [],
 	"author": "",

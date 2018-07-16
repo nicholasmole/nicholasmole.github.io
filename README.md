@@ -1,6 +1,6 @@
-# Test React Redux-Saga nicholasmole.github.io
+# nicholasmole.github.io
 
-This is a test react application for nicholasmole.github.io
+nicholasmole.github.io page for git hub
 
 ## How to start this up
 
