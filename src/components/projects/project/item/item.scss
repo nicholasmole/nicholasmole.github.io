@@ -47,3 +47,9 @@ li.projects-image_container {
 		max-width: 430px;
 	}
 }
+
+@media only screen and (min-width: 1300px) {
+	li.projects-image_container {
+		flex: 1 0 100%;
+	}
+}
