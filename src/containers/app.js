@@ -41,10 +41,10 @@ class App extends Component {
 			<div id={styles.app}>
 				<div id="wrap">
 					<Header/>
+					<AsyncHome/>
 					{
 						loaded &&
 						<div>
-							<AsyncHome/>
 							<AsyncWhy/>
 							<AsyncAbout/>
 							<AsyncProjects/>
