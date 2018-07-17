@@ -56,7 +56,7 @@ let browserConfig = {
 								minimize: !isDev,
 								importLoaders: 1,
 								// localIdentName: isDev ? '[local]' : '[hash:5]',
-								localIdentName: isDev ? '[local]' : '[local]',
+								localIdentName: isDev ? '[local]' : '[hash:5]',
 								discardComments: {
 									removeAll: true
 								}

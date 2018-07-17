@@ -13,7 +13,7 @@ class Skills extends Component {
 					title="Skills and Knowledge"
 				/>
 				<Content/>
-				<img src="img/lang_icons_1.png" alt="Image of programming languages" className={styles.skills_container_image}/>
+				<img src="img/lang_icons_1.gif" alt="Image of programming languages" className={styles.skills_container_image}/>
 				<List
 					skills={
 						[

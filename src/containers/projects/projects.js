@@ -20,7 +20,7 @@ class Projects extends Component {
 						[
 							{
 								image: {
-									src: '/img/caisoft_150.png',
+									src: '/img/caisoft_150.jpg',
 									alt: 'caisoft image'
 								},
 								title: 'CAisoft',
@@ -32,7 +32,7 @@ class Projects extends Component {
 							},
 							{
 								image: {
-									src: '/img/cj_150.png',
+									src: '/img/cj_150.jpg',
 									alt: 'Cj carpentry image'
 								},
 								title: 'CJ Carpentry',
@@ -44,7 +44,7 @@ class Projects extends Component {
 							},
 							{
 								image: {
-									src: '/img/cleary_150.png',
+									src: '/img/cleary_150.jpg',
 									alt: 'Cleary Millwork '
 								},
 								title: 'Cleary Millwork',
@@ -56,7 +56,7 @@ class Projects extends Component {
 							},
 							{
 								image: {
-									src: '/img/ri_150.png',
+									src: '/img/ri_150.jpg',
 									alt: 'Rhode Races'
 								},
 								title: 'Rhode Races',
@@ -80,7 +80,7 @@ class Projects extends Component {
 							},
 							{
 								image: {
-									src: '/img/preact_ele_150.png',
+									src: '/img/preact_ele_150.jpg',
 									alt: 'Preact Electron Window '
 								},
 								title: 'Preact Electron Template App',
@@ -92,7 +92,7 @@ class Projects extends Component {
 							},
 							{
 								image: {
-									src: '/img/add_user_fields_150.png',
+									src: '/img/add_user_fields_150.jpg',
 									alt: 'Options menu for adding users '
 								},
 								title: 'Add User Fields - Plugin',
