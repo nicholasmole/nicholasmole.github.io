@@ -11,3 +11,12 @@
     flex-wrap: wrap;
 	}
 }
+
+@media only screen and (min-width: 769px) {
+	.skills-list_container {
+		ul {
+			margin-left: 0%;
+    	margin-right: 0%;
+		}
+	}
+}
