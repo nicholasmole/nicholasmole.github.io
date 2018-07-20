@@ -8,7 +8,6 @@ const Project = ({items}) => (
 			{
 				items &&
 				items.map(item => (
-					
 					<Item
 						key={item.title}
 						image={item.image}
