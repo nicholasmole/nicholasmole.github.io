@@ -6,7 +6,10 @@ import Orbs from './orbs/orbs';
 
 const Hero = () => (
 	<div className={styles['hero_container']}>
-		<img href="/" src="img/At_the_desk_769.jpeg" alt="A computer phone and notebook" className={styles.hero_image}/>
+		<picture>
+			<source media="(max-width: 770px)" srcSet="img/At_the_desk_769.jpeg"/>
+			<img src="" alt="A computer phone and notebook" className={styles.hero_image}/>
+		</picture>
 		<Orbs/>
 		<Content/>
 		<Subtitle/>

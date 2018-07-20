@@ -10,7 +10,7 @@
 		"build": "node_modules/.bin/webpack --config webpack.config.prod.js",
 		"deploy": " gh-pages -b master -d public"
 	},
-	"keywords": [], 
+	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
@@ -89,6 +89,7 @@
 		"react-dom": "^16.2.0",
 		"react-helmet": "^5.2.0",
 		"react-immutable-proptypes": "2.1.0",
+		"react-loadable": "^5.4.0",
 		"react-motion": "0.5.2",
 		"react-redux": "5.0.6",
 		"react-router": "4.2.0",
