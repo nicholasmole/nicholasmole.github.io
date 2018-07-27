@@ -8,9 +8,6 @@ import './css/utils/global.scss';
 // const store = createStore(reducer);
 
 render(
-	// <Provider store={store}>
-		<App/>
-	// </Provider>,
-	,
+	<App/>,
 	document.getElementById('root')
 );
