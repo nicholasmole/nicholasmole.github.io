@@ -21,6 +21,11 @@ li.skills-list-skill {
 	border-radius: 5px;
 	text-decoration: none;
 	cursor: wait;
+      color: #000 !important;
+    background: white !important;
+    font-size: 20px !important;
+    padding: 16px 0px;
+    border: 2px solid;
 	&:hover {
 		color: $myBlue;
 		background: $myWhite;

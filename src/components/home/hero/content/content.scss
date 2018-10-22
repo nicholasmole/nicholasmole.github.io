@@ -13,11 +13,23 @@
 		margin-bottom: .5em;
 	}
 	.hero-content_title {
-		font-size: 2.25em;
-		color: $myRed;
+		padding-left: 8px;  
+    font-size: 18px;
+		color: #45bafc;
 		text-shadow: 1px 1px 5px rgba(0,0,0,0.45);
 		font-family: Georgia, 'Times New Roman', Times, serif;
 	}
+  .hero-content_dev {
+    color: #45bafc;
+    padding-right: 8px;
+  }
+  .hero-content_pro {
+    color: #ff6a00;
+    padding-left: 8px;
+  }
+  .hero-content_posttitle {
+    font-size: 16px;
+  }
 	h1 {
 		margin-bottom: 0px;
 	}

@@ -20,7 +20,7 @@ class Skills extends Component {
 							'Javascript',
 							'JQuery',
 							'React',
-							'Redux',
+							'Drupal',
 							'Node.js',
 							'React Native',
 							'PHP',

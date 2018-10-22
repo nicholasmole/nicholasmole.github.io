@@ -3,10 +3,10 @@ import styles from './subtitle.scss';
 
 const Subtitle = () => (
 	<div className={styles['home-subtitle_container']}>
-		<span>Make it flashy!</span>
-		<span>Make it awesome!</span>
-		<span>Make it Last!</span>
-		<span>Make it with Mole!</span>
+		<span>Single Page Applications!</span>
+		<span>Wordpress plugins!</span>
+		<span>NPM packages!</span>
+		<span>Full stack developer!</span>
 	</div>
 );
 

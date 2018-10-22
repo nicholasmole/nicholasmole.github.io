@@ -4,17 +4,18 @@ import Item from './item/item';
 
 const Project = ({items}) => (
 	<div className={styles['projects-project_container']}>
-		<ul>
+    <ul>
 			{
 				items &&
 				items.map(item => (
-					<Item
+          <Item
 						key={item.title}
 						image={item.image}
 						title={item.title}
 						content={item.content}
 						link={item.button}
-					/>
+            expansion={item.expansion.text}
+          />
 				))
 			}
 		</ul>

@@ -1,7 +1,11 @@
 .projects-content_container {
-	margin-right: 3.125%;
-	margin-left: 3.125%;
-	margin-bottom: 15px;
-    font-size: 1em;
+    font-size: 1.25em;
     line-height: 1.5em;
+    margin: 1.75em ;
+    line-height: 1.75em;
+}
+@media all and (max-width: 776px) {
+  .projects-content_container {
+    margin: 1.75em 16px;
+  }
 }

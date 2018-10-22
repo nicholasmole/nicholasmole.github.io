@@ -2,7 +2,7 @@
 
 .contact-jump {
 	color: $myWhite;
-	background: $hyperRed;
+	background: #242834;
 	margin: 0px;
 	margin-right: 3.125%;
 	margin-left: 3.125%;
@@ -16,7 +16,8 @@
 	text-align: center;
 	width: 80%;
 	border-radius: 5px;
-	&:hover {
+	text-decoration: none;
+  &:hover {
 		color: $middleHyperRed;
 		background: $myWhite;
 	}
@@ -24,15 +25,15 @@
 
 @media only screen and (min-width: 769px) {
 	.contact-jump {
-		color: $middleHyperRed;
-		background: $myWhite;
+		color: #fff;
+		background: #242834;
 		transition: 0.25s all;
     margin-top: -5px;
 		margin-bottom: 5px;
 		width: 350px;
 		&:hover {
-			color: $myWhite;
-			background: $hyperRed;
+			color: #242834;
+			background: #fff;
 		}
 	}
 }

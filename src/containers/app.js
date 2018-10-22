@@ -69,7 +69,6 @@ class App extends Component {
 					{
 						loaded &&
 						<div className={styles.fun_color_box}>
-							<AsyncWhy/>
 							<AsyncAbout/>
 							<AsyncProjects/>
 							<AsyncSkills/>

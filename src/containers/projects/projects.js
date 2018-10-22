@@ -24,35 +24,54 @@ class Projects extends Component {
 									alt: 'caisoft image'
 								},
 								title: 'CAisoft',
-								content: 'Wordpress - Custom Data Plugins, Docker, MariaDB',
+                content: `Software development company. Wordpress CMS. Developing CustomPlugins. 
+                Launched using Docker, MariaDB database`,
 								button: {
 									text: 'Go',
 									link: 'https://caisoft.com/'
-								}
+                },
+                expansion: {
+                  text: `Software development company with hundreds of blog, product pages. Site
+                  needed to be transferred from an old server to Digital Ocean environment. Used GIT
+                  and docker as version and deployment control.`
+                }
 							},
-							{
-								image: {
-									src: '/img/cj_150.jpg',
-									alt: 'Cj carpentry image'
-								},
-								title: 'CJ Carpentry',
-								content: 'React App - Single Page / Async Loading',
-								button: {
-									text: 'Go',
-									link: 'https://cjcarpentry.org/'
-								}
-							},
+              {
+                image: {
+                  src: '/img/custom_app_200.jpg',
+                  alt: 'Custom Application'
+                },
+                title: 'Company News Source',
+                content: `Custom News Source application for client internal company use. React single
+                page application that pulls in data from back-end source.`,
+                expansion: {
+                  text: `React application developed using a custom Webpack setup. Application created
+                  for company internal use only. Developed with SSO implementation for security. Uses
+                  REST api to collect and display information.`
+                },
+                button: {
+                  text: '',
+                  link: ''
+                }
+              },
 							{
 								image: {
 									src: '/img/cleary_150.jpg',
 									alt: 'Cleary Millwork '
 								},
 								title: 'Cleary Millwork',
-								content: 'Wordpress - Custom User Auth plugins, Docker',
+                content: `Woodwork/ Manufacturing company. Wordpress CMS with custom user/admin 
+                plugin development.`,
 								button: {
 									text: 'Go',
 									link: 'https://www.clearymillwork.com/'
-								}
+                },
+                expansion: {
+                  text: `Develop site, and create custom theme for client. Develop plugin 
+                  to help client customizer their user experience. Allowing client to develop
+                  custom fields for Wordpress user data. And allow certain users to access 
+                  only pages they are allowed to on the backend.`
+                }
 							},
 							{
 								image: {
@@ -64,20 +83,49 @@ class Projects extends Component {
 								button: {
 									text: 'Go',
 									link: 'http://runri.us/'
-								}
+                },
+                expansion: {
+                  text: `Update client site using the visual composer builder tool. Client
+                  already has site built. Needed to make edits, and revisions where necessary.
+                  Create custom pages for new events for client.`
+                }
 							},
 							{
 								image: {
-									src: '/img/terminal_csv_150.png',
-									alt: 'terminal image with clock'
+									src: '/img/foia_200.png',
+									alt: 'Find Object in Array'
 								},
-								title: 'Time Task Logger',
-								content: 'Ruby - Time tracker built into terminal, with rspec ',
-								button: {
+								title: 'Find Object in Array',
+                content: 'npm package finds an object in an array of objects',
+                button: {
 									text: 'Go',
 									link: 'https://github.com/nicholasmole/time_task_logger'
-								}
+                },
+                expansion: {
+                  text: `When making api requests in javascript this is the easiest way to
+                  have your application search for one specific object in an array of objects.
+                  Simply applying the array, key, and value you are looking for and this function
+                  turns into the object you need.
+                  `
+                }
 							},
+              {
+								image: {
+									src: '/img/cj_150.jpg',
+									alt: 'Cj carpentry image'
+								},
+								title: 'CJ Carpentry',
+								content: 'Preact App - Single Page / Async Loading',
+								button: {
+									text: 'Go',
+									link: 'https://cjcarpentry.org/'
+                },
+                expansion: {
+                  text: `A single page application create per diem with zero budget, no given content,
+                  and a very short time line. Got site up and live from purchasing site name to launch.`
+                }
+							},
+
 							{
 								image: {
 									src: '/img/preact_ele_150.jpg',
@@ -88,7 +136,13 @@ class Projects extends Component {
 								button: {
 									text: 'Go',
 									link: 'https://github.com/nicholasmole/preact-electron-demo-redux-router'
-								}
+                },
+                expansion: {
+                  text: `Electron is a very popular way for web developers to create cross
+                    platform applications. Preact is a smaller version of React so you can
+                    save a lot of space as electron tends to eat up as much ram as it can get.
+                  `
+                }
 							},
 							{
 								image: {
@@ -100,7 +154,13 @@ class Projects extends Component {
 								button: {
 									text: 'Go',
 									link: 'https://github.com/nicholasmole/add_user_field'
-								}
+                },
+                expansion: {
+                  text: `Trying to give users in your wordpress site, extra fields?
+                    this plugin allows you to create fields that are editable on the
+                    admin user pages.
+                  `
+                }
 							}
 						]
 					}

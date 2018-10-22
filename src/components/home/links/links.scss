@@ -1,9 +1,12 @@
 @import '../../../css/utils/variables.scss';
-
+.home-links_box {
+  background: #242834;
+}
 .home-links_container {
-	background: $myWhite;
+	//background: $myWhite;
 	padding: 8px;
 }
+
 @media only screen and (min-width: 769px) {
 	.home-links_container {
 		width: 769px;

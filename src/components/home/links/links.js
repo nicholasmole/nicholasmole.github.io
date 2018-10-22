@@ -3,7 +3,8 @@ import styles from './links.scss';
 import Items from './items/items';
 
 const Links = () => (
-	<div className={styles['home-links_container']}>
+  <div className={styles['home-links_box']}>
+  <div className={styles['home-links_container']}>
 		<Items
 			text="About"
 			link="#about"
@@ -21,6 +22,7 @@ const Links = () => (
 			link="#contact"
 		/>
 	</div>
+  </div>
 );
 
 export default Links;
