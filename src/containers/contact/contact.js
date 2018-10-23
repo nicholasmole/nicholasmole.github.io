@@ -36,7 +36,7 @@ class Contact extends Component {
 							},
 							{
 								title: 'nmole065@gmail',
-								link: 'mailto:nmole065@gmail'
+								link: 'mailto:nmole065@gmail.com'
 							}
 						]
 					}

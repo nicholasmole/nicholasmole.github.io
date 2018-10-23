@@ -15,7 +15,7 @@ li.projects-image_container {
 	}
 	a {
 		color: #F8F9F8;
-    background-color: #036ec9; 
+    background-color: #45bafc;
     margin: 0px;
     display: inline-block;
     font-size: 1em;
@@ -31,8 +31,8 @@ li.projects-image_container {
     border-radius: 5px;
 		text-decoration: none;
 		&:hover {
-			background-color: #F8F9F8;
-      color: #036ec9; 
+			background-color: #Fff;
+      color: #45bafc; 
 		}
 	}
 }
@@ -45,10 +45,10 @@ font-size: 1.25em;
   }
 }
 .project-more_button {
-  background-color: #ff6a00 !important;
+  background-color: #242834 !important;
   &:hover {
     background-color: #fff !important;
-    color: #ff6a00 !important;
+    color: #242834 !important;
     cursor: pointer;
   }
 }
