@@ -31,10 +31,12 @@ const AsyncContact = Loadable({
 	loader: () => import('./contact/contact'),
 	loading: Loading
 });
-// const AsyncAbout = asyncComponent(() => import('./about/about'));
-// const AsyncProjects = asyncComponent(() => import('./projects/projects'));
-// const AsyncSkills = asyncComponent(() => import('./skills/skills'));
-// const AsyncContact = asyncComponent(() => import('./contact/contact'));
+
+
+const AsyncTopSlider = Loadable({
+	loader: () => import('./topSlider/topSlider'),
+	loading: Loading
+});
 
 class App extends Component {
 	constructor(props) {
@@ -65,7 +67,8 @@ class App extends Component {
 			<div id={styles.app}>
 				<div id="wrap">
 					<Header/>
-					<AsyncHome/>
+					<AsyncTopSlider/>
+					{/* <AsyncHome/>
 					{
 						loaded &&
 						<div className={styles.fun_color_box}>
@@ -74,7 +77,7 @@ class App extends Component {
 							<AsyncSkills/>
 							<AsyncContact/>
 						</div>
-					}
+					} */}
 				</div>
 			</div>
 		);

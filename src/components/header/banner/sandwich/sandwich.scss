@@ -1,0 +1,13 @@
+.sandwich_container {
+	display: inline;
+	float: right;
+	padding: 20px;
+}
+.sandwich {
+	display: block;
+	border-bottom: 17px double hsla(0,0%,82%,.78039);
+	border-top: 6px solid hsla(0,0%,82%,.78039);
+	content: "";
+	height: 5px;
+	width: 30px;
+}

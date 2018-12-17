@@ -1,0 +1,12 @@
+.navigation_item_container {
+	cursor: pointer;
+	color: #fff;
+	font-size: 37px;
+	display: block;
+	padding: 16px;
+	transition: 0.2s;
+	&:hover {
+		text-decoration: none;
+		font-size: 38px;
+	}
+}

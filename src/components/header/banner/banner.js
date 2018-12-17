@@ -1,11 +1,21 @@
 import {h, Component} from 'preact';
-import styles from './banner.scss';
+import {
+	Sandwich
+} from './sandwich';
 
-const Banner = () => (
-	<div className={styles['header-banner_container']}>
-		<img href="/" src="img/happy_mole_favicon.gif" alt="Now Mole's favicon"/>
+export const Banner = ({
+	openDrawer
+}) =>  (
+	<div>
+		<img 
+			href="/" 
+			src="/img/happy_mole_favicon_2.png" 
+			alt="Now Mole's favicon"
+		/>
+		<Sandwich
+			openDrawer={openDrawer}
+		/>
 	</div>
 );
 
 export default Banner;
-

@@ -1,0 +1,29 @@
+.dots_container {
+	text-align: center;
+	.dots_dot {
+    width: 16px;
+    display: inline-block;
+    height: 16px;
+    background: #ccc;
+    border-radius: 3px;
+		margin: 6px 40px -10px;
+		transition: 0.2s;
+		&:hover {
+			transform: scale(1.2);
+		}
+	}
+	.dots_dot_current_target {
+		background: #02b5b2;
+		width: 24px;
+		height: 24px;
+		&.orange {
+			background: #ff6a00;
+		}
+		&.pink {
+			background: #e31b6d;
+		}
+		&.green {
+			background: #A7CC46;
+		}
+	}
+}
