@@ -94,6 +94,18 @@ export class AboutSlide extends Component {
 				className="topSlider_container"
 			>
 				{setSlider(data[slide], slide, this.setSlide)}
+				<div className="about_display_all">
+					{
+						data.map(item =>
+							<Slide
+								data={data}
+								currentSlideIndex={slide}
+								setSlide={this.setSlide}
+								{...item}
+							/>
+						)
+					}
+				</div>
 			</div>
 		);
 

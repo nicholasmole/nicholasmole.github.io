@@ -13,37 +13,55 @@ export const Swipeable = (WrappedComponent, selectData) => {
       this.state = {
 				start: null,
 				end: null,
+				yStart: null,
+				yEnd: null,
 				touchable: true
       };
     }
 
     onStart(e) {
 			let touchStart = e.screenX;
+			let yStart = e.screenY;
 			if (e.touches) {
 				if (e.touches[0]) {
 					touchStart = e.touches[0].screenX;
+					yStart = e.touches[0].screenY;
 				}
 			}
 			this.setState({
-				start: touchStart
+				start: touchStart,
+				end: null,
+				yStart
 			})
 		}
 		
     onEnd(e) {
 			let touchEnd = e.screenX;
+			let yEnd = e.screenY;
 			if (e.touches) {
 				if (e.touches[0]) {
 					touchEnd = e.touches[0].screenX;
+					yEnd = e.touches[0].screenY;
 				}
 			}
 			if (e.changedTouches) {
 				if (e.changedTouches[0]) {
 					touchEnd = e.changedTouches[0].screenX;
+					yEnd = e.changedTouches[0].screenY;
 				}
 			}
-			this.setState({
-				end: touchEnd
-			});
+
+			if (Math.abs(this.state.yStart - yEnd) < 50 ) {
+				this.setState({
+					end: touchEnd
+				});
+			} else {
+				this.setState({
+					start: null,
+					end: null,
+					yStart: null
+				});
+			}
     }
 
 		reTouchable() {

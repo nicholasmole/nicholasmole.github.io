@@ -49,19 +49,21 @@ export class ContactSlide extends Component {
 				className="topSlider_container"
 			>
 				<div className="contact_me_container">
-					<div className="contact_me_title">
-						Contact Me
+					<div className="slide_container_page_limit">
+						<div className="contact_me_title">
+							Contact Me
+						</div>
+						<div className="contact_me_text">
+							Need some help? Want to chat? Choose your contact method!
+						</div>
+						{
+							data.map(item =>
+								<SetSlider
+									{...item}
+								/>
+							)
+						}
 					</div>
-					<div className="contact_me_text">
-						Need some help? Want to chat? Choose your contact method!
-					</div>
-					{
-						data.map(item =>
-							<SetSlider
-								{...item}
-							/>
-						)
-					}
 				</div>
 			</div>
 		);

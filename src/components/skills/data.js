@@ -4,7 +4,9 @@ export const data = [
 		"title": "Front End Development ",
 		"text": `Developing using the lastest
 		in popular frameworks, and preprocessing.
-		Developing work process with Gulp and webpack `,
+		Developing work process with Gulp and webpack.
+		Using design tools like Zepplin, Adobe XD, photoshop
+		, and the invision app.  `,
 		"list": [
 			"React",
 			"Vue",
@@ -22,8 +24,10 @@ export const data = [
 		"title": "Content Management Systems",
 		"text": `Working with the most popular
 		CMS systems. Customizing themes, and 
-		developing modules, plugins, and 
-		functionality with plain javascript `,
+		developing modules, and plugins.
+		Keeping up with the latest in deployment versions. 
+		Setting up database, and deployments using such tools
+		as Docker and Vagrant.`,
 		"list": [
 			"Wordpress",
 			"Drupal",
@@ -38,7 +42,9 @@ export const data = [
 		"index": 3,
 		"title": "Backend Development & Database Management",
 		"text": `Working on backend programming. Including
-		Test Driven Design, OOP, and database migrations. `,
+		Test Driven Design, OOP, and database migrations.
+		Importing and Export data, templating, and working with
+		third-party tools.`,
 		"list": [
 			"PHP",
 			"MYSQL",
@@ -55,11 +61,12 @@ export const data = [
 		"text": `Version Control with Git,
 		deployment control with Docker, and
 		services like Digital Ocean, Netlify,
-		SMTPs, and Amazon services `,
+		SMTPs, and Amazon services. Extensive knowledge
+		of Vim and Unix Commands. `,
 		"list": [
 			"Docker",
 			"Vagrant",
-			"Lando",
+			"Heroku",
 			"Digital Ocean",
 			"Netlify",
 			"GitHub"

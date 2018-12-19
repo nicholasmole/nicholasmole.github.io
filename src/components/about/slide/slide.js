@@ -20,26 +20,27 @@ export const Slide = ({
 }) => (
 	<div
 		id="about"
-		className="about_slide_container"
+		className={`about_slide_container slide${index}`}
 	>
 		
-
-		<div className="about_slide_title">
-			{title}
+		<div className="slide_container_page_limit">
+			<div className="about_slide_title">
+				{title}
+			</div>
+			<img
+				src={src}
+				alt={alt}
+			/>
+			<div className="about_slide_text">
+				{text}
+			</div>
+			<Dots
+				color={color}
+				data={data}
+				currentSlideIndex={currentSlideIndex}
+				setSlide={setSlide}
+			/>
 		</div>
-		<img
-			src={src}
-			alt={alt}
-		/>
-		<div className="about_slide_text">
-			{text}
-		</div>
-		<Dots
-			color={color}
-			data={data}
-			currentSlideIndex={currentSlideIndex}
-			setSlide={setSlide}
-		/>
 		<div className="arrow_about_home white_arrow">
 		</div>
 	</div>

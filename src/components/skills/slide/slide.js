@@ -26,40 +26,41 @@ export const Slide = ({
 	<div
 		className="skills_work_slide_container"
 	>
-		{console.log(index)}
-		{console.warn(index%2)}
+
 		<div className="work_slide_content_container">
-			<div className="work_slide_title">
-				{title}
-			</div>
-			<img
-				className={isRight(index)}
-				src={src}
-				alt={alt}
-			/>
-			
-			<div className="skills_slide_text">
-				{text}
-			</div>
-			{
-				list && 
-				<div className="work_slide_list_container">
-					{
-						list.map(item =>
-							<div className="work_slide_list_item">
-								{item}
-							</div>
-						)
-					}
+			<div className="slide_container_page_limit">
+				<div className="work_slide_title">
+					{title}
 				</div>
-			}
+				<img
+					className={isRight(index)}
+					src={src}
+					alt={alt}
+				/>
+				
+				<div className="skills_slide_text">
+					{text}
+				</div>
+				{
+					list && 
+					<div className="work_slide_list_container">
+						{
+							list.map(item =>
+								<div className="work_slide_list_item">
+									{item}
+								</div>
+							)
+						}
+					</div>
+				}
+			</div>
+			<Dots
+				color={color}
+				data={data}
+				currentSlideIndex={currentSlideIndex}
+				setSlide={setSlide}
+			/>
 		</div>
-		<Dots
-			color={color}
-			data={data}
-			currentSlideIndex={currentSlideIndex}
-			setSlide={setSlide}
-		/>
 		<div className="arrow_about_home">
 		</div>
 	</div>

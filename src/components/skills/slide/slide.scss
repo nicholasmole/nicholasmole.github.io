@@ -14,10 +14,10 @@
 	img {
 		width: 120px;
     float: left;
-    border-radius: 35%;
+    // border-radius: 35%;
     margin-right: 16px;
     margin-top: 16px;
-    box-shadow: 9px 6px 5px rgba(0,0,0,0.5), 0px -6px 5px rgba(0,0,0,0.5);
+    box-shadow: 9px 6px rgba(0, 0, 0, 1);
 	}
 	img.isRight {
 		float: right;
@@ -37,14 +37,14 @@
 		
 	}
 	.work_slide_list_container {
-    background: #ff6a00;
+    // background: #ff6a00;
 		margin: 16px 64px;
 		margin-bottom: 0px;
     text-align: center;
     color: #fff;
 		display: flex;
 		flex-wrap: wrap;
-		box-shadow: -7px -5px 0px rgba(0, 0,0,0.5);
+		// box-shadow: -7px -5px 0px rgba(0, 0,0,0.5);
 		.work_slide_list_item {
 			flex: 1 0 33%;
 			margin: 16px;
@@ -61,6 +61,8 @@
     color: #fff;
     line-height: 33px;
 		text-align: center;
+		background: #ff6a00;
+		box-shadow: 7px 5px 0px rgba(0, 0,0,0.5);
 	}
 	.arrow_about_home {
 		background: #fff;
@@ -99,3 +101,36 @@
 
 	}
 }
+
+@media screen and (min-width: 669px) {
+
+	.work_slide_content_container {
+		img.isRight {
+			float: left !important;
+		}
+		.slide_container_page_limit {
+			min-height: 415px;
+			img {
+				width: 187px;
+				margin-left: 52px;
+				border-radius: 0%;
+			}
+		}
+		.work_slide_title {
+			font-size: 32px;
+		}
+		.work_slide_text {
+			font-size: 20px;
+		}
+		.skills_slide_text {
+			height: 200px;
+			font-size: 18px;
+			line-height: 48px;
+			margin-right: 66px;
+			background: #ff6a00;
+			box-shadow: 7px 8px 0px rgba(0, 0, 0, 1);
+		}
+
+	}	
+}
+
