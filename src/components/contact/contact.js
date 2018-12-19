@@ -45,6 +45,7 @@ export class ContactSlide extends Component {
 
 		return (
 			<div
+				id="contact"
 				className="topSlider_container"
 			>
 				<div className="contact_me_container">

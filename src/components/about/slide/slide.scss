@@ -12,6 +12,11 @@
 		
     box-shadow: -4px -4px 2px rgba(0,0,0,5);
 	}
+	.dots_container {
+		.dots_dot_current_target {
+			background: #02b5b2 !important;
+		}
+	}
 	.about_slide_title {
 		
 		font-family: 'Open Sans', sans-serif;
@@ -54,14 +59,15 @@
 		text-align: center;
 		transition: 0.5s;
 		&.orange {
-			background: #ff6a00;
+			background: #02b5b2;
 		}
 		&.pink {
-			background: #e31b6d;
+			background: #02b5b2;
 		}
 		&.green {
-			background: #A7CC46;
+			background: #02b5b2;
 		}
+	
 		&:hover {
 			filter: brightness(120%);
 			box-shadow: 2px 2px 10px rgba(0, 0, 0, 01);

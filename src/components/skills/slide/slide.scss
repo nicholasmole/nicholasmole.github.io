@@ -6,6 +6,11 @@
 		min-height: 460px;
 		background: #242834;
 	}
+	.dots_container {
+		.dots_dot_current_target {
+			background: #ff6a00 !important;
+		}
+	}
 	img {
 		width: 120px;
     float: left;

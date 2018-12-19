@@ -1,1 +1,1 @@
-export {SkillsSlide} from './skills';
+export {default as SkillsSlide} from './skills';

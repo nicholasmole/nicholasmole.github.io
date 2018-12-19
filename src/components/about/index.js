@@ -1,1 +1,1 @@
-export {AboutSlide} from './about';
+export {default as AboutSlide} from './about';

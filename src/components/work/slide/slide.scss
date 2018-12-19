@@ -5,6 +5,11 @@
 		margin-top: 16px; 
 		margin-bottom: 16px; 
 	}
+	.dots_container {
+		.dots_dot_current_target {
+			background: #e31b6d !important;
+		}
+	}
 	img {
 		width: 120px;
     float: left;

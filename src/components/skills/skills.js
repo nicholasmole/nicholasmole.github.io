@@ -5,6 +5,9 @@ import {
 import {
 	Slide
 } from './slide';
+import {
+	Swipeable
+} from '../higher';
 
 const setSlider = ({
 	index,
@@ -43,6 +46,41 @@ export class SkillsSlide extends Component {
 		this.setSlide = this.setSlide.bind(this);
 	}
 
+	componentWillReceiveProps(props) {
+		
+		if (props.start && props.end && props.touchable) {
+			// going right
+			if (props.start > (props.end + 25)  ) {
+				props.resetTouch();
+				if (this.state.slide === 3) {
+					this.setState({
+						slide: 0
+					})
+				} else {
+					const newState = this.state.slide + 1;
+					this.setState({
+						slide: newState
+					})
+				}
+			}
+			// going left
+			if ((props.start + 25) < props.end ) {
+				props.resetTouch();
+				if (this.state.slide === 0) {
+					this.setState({
+						slide: 3
+					})
+				} else {
+					const newState = this.state.slide - 1;
+					this.setState({
+						slide: newState
+					})
+				}
+			}	
+		}
+	}
+
+
 	setSlide(slide) {
 		this.setState({
 			slide
@@ -56,6 +94,7 @@ export class SkillsSlide extends Component {
 
 		return (
 			<div
+				id="skills"
 				className="topSlider_container"
 			>
 				{setSlider(data[slide], slide, this.setSlide)}
@@ -65,4 +104,4 @@ export class SkillsSlide extends Component {
 	}
 }
 
-export default SkillsSlide;
+export default Swipeable(SkillsSlide);

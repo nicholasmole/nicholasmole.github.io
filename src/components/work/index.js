@@ -1,1 +1,1 @@
-export {WorkSlide} from './work';
+export {default as WorkSlide} from './work';

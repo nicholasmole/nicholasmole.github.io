@@ -76,9 +76,7 @@ export class Slider extends Component {
 						slide: newState
 					})
 				}
-			}
-
-			
+			}	
 		}
 	}
 
