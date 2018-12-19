@@ -82,6 +82,17 @@
 	display: none;
 }
 
+@media screen and (max-width: 669px) {
+	.about_slide_container {
+		.about_slide_text {
+			background: #02b5b2;
+			color: #fff;
+			padding: 8px;
+			margin: 8px;
+		}
+	}
+}
+
 @media screen and (min-width: 669px) {
 
 	.about_slide_container {
