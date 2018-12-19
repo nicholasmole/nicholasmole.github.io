@@ -1,0 +1,38 @@
+.contact_me_container {
+	background: #242834;
+	padding: 32px;
+
+	.contact_me_title {
+		color: #A7CC46;
+		font-size: 24px;
+		font-weight: bold;
+	}
+	.contact_me_text {
+		color: #fff;
+		font-size: 18px;
+		line-height: 32px;
+	}
+	.contact_me_slide_link_container {
+		display: block;
+		margin: 18px 0px;
+		.contact_me_slide_link {
+			text-align: center;
+			color: #fff;
+			background: #A7CC46;
+			padding: 10px 0px;
+			border-radius: 6px;
+			width: 150px;
+			display: block;
+			box-shadow: 6px 6px 2px rgba(0,0,0,1);
+			text-decoration: none;
+			transition: 0.2s;
+			&:hover {
+				transform: scale(1.1);
+				background: #a2c545;
+				text-decoration: underline;
+
+			}
+		}
+	}
+
+}

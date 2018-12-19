@@ -11,30 +11,46 @@ const AsyncHome = Loadable({
 	loader: () => import('./home/home'),
 	loading: Loading
 });
-const AsyncWhy = Loadable({
-	loader: () => import('./why/why'),
+// const AsyncWhy = Loadable({
+// 	loader: () => import('./why/why'),
+// 	loading: Loading
+// });
+// const AsyncAbout = Loadable({
+// 	loader: () => import('./about/about'),
+// 	loading: Loading
+// });
+// const AsyncProjects = Loadable({
+// 	loader: () => import('./projects/projects'),
+// 	loading: Loading
+// });
+// const AsyncSkills = Loadable({
+// 	loader: () => import('./skills/skills'),
+// 	loading: Loading
+// });
+// const AsyncContact = Loadable({
+// 	loader: () => import('./contact/contact'),
+// 	loading: Loading
+// });
+
+
+const AsyncTopSlider = Loadable({
+	loader: () => import('./topSlider/topSlider'),
 	loading: Loading
 });
-const AsyncAbout = Loadable({
+const AsyncAboutme = Loadable({
 	loader: () => import('./about/about'),
-	loading: Loading
-});
-const AsyncProjects = Loadable({
-	loader: () => import('./projects/projects'),
 	loading: Loading
 });
 const AsyncSkills = Loadable({
 	loader: () => import('./skills/skills'),
 	loading: Loading
 });
-const AsyncContact = Loadable({
-	loader: () => import('./contact/contact'),
+const AsyncWork = Loadable({
+	loader: () => import('./work/work'),
 	loading: Loading
 });
-
-
-const AsyncTopSlider = Loadable({
-	loader: () => import('./topSlider/topSlider'),
+const AsyncContact = Loadable({
+	loader: () => import('./contact/contact'),
 	loading: Loading
 });
 
@@ -67,7 +83,11 @@ class App extends Component {
 			<div id={styles.app}>
 				<div id="wrap">
 					<Header/>
-					<AsyncTopSlider/>
+					<AsyncTopSlider/> 
+					<AsyncAboutme/>
+					<AsyncSkills/>
+					<AsyncWork/>
+					<AsyncContact/>
 					{/* <AsyncHome/>
 					{
 						loaded &&

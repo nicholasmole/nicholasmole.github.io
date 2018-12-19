@@ -1,47 +1,57 @@
-.slide_container {
-	background: #242834;
+.work_slide_container {
+	height: 416px;
+	background: #fff;
+	
 	img {
-		width: 100%;
-		pointer-events: none;
-		user-select: none;
+		width: 120px;
+    float: left;
+    border-top-right-radius: 43%;
+    border-bottom-right-radius: 25%;
+    margin-right: 16px;
+    margin-top: 16px;
+    box-shadow: 9px 6px 5px rgba(0,0,0,0.5), 0px -6px 5px rgba(0,0,0,0.5);
 	}
-	.slide_title {
+	.work_slide_title {
+		
 		font-family: 'Open Sans', sans-serif;
     font-size: 24px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin: 16px;
-    font-weight: bold;
-		color: #fff;
-		text-align: center;
-	}
-	.slide_text {
 		margin: 16px;
-		font-family: 'Open Sans', sans-serif;
-		color: #fff;
+		margin-top: 0px;
+		padding-top: 16px;
+    font-weight: bold;
+		color: #e31b6d;
 		text-align: center;
+		
 	}
-	.arrow_about_home {
-		background: #fff;
+	.work_slide_text {
+    margin: 16px 64px;
+    font-family: 'Open Sans', sans-serif;
+    color: #242834;
+    line-height: 33px;
+		text-align: center;
+		min-height: 260px;
+	}
+	.arrow_about_home.white_arrow {
+		background: #242834;
 		width: 0;
     height: 0;
     border-left: 50vw solid transparent;
     border-right: 50vw solid transparent;
-    border-top: 32px solid #242834;
+    border-top: 32px solid #fff;
     margin: 0 auto;
 	}
 	.slide_go_button_container {
 		margin: 8px auto;
 		background: #02b5b2;
-		padding: 3px 74px;
-		display: block;
+    padding: 3px 74px;
     border-radius: 4px;
-    color: #fff;
+    color: #242834;
 		box-shadow: 2px 2px 2px rgba(0, 0, 0, 01);
 		width: 60px;
 		text-align: center;
 		transition: 0.5s;
-		text-decoration: none;
 		&.orange {
 			background: #ff6a00;
 		}

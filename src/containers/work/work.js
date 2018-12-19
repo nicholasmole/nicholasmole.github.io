@@ -1,14 +1,14 @@
 import {h, Component} from 'preact';
 import {
-	SkillsSlide
-} from '../../components/skills';
+	WorkSlide
+} from '../../components/work';
 
 export class Work extends Component {
 
 	render() {
 		return (
 			<div>
-				<SkillsSlide/>
+				<WorkSlide/>
 			</div>
 		);
 	}

@@ -1,0 +1,98 @@
+.work_slide_container {
+	// height: 416px;
+	background: #fff;
+	.dots_container {
+		margin-top: 16px; 
+		margin-bottom: 16px; 
+	}
+	img {
+		width: 120px;
+    float: left;
+    border-top-right-radius: 43%;
+    border-bottom-right-radius: 25%;
+    margin-right: 16px;
+    margin-top: 16px;
+    box-shadow: 9px 6px 5px rgba(0,0,0,0.5), 0px -6px 5px rgba(0,0,0,0.5);
+	}
+	.work_slide_title {
+		
+		font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+		margin: 16px;
+		margin-top: 0px;
+		padding-top: 16px;
+    font-weight: bold;
+		color: #e31b6d;
+		text-align: center;
+		
+	}
+	.work_slide_text {
+    margin: 16px 64px;
+    font-family: 'Open Sans', sans-serif;
+    color: #242834;
+    line-height: 33px;
+		text-align: center;
+		// min-height: 260px;
+	}
+	.arrow_about_home.white_arrow {
+		background: #242834;
+		width: 0;
+    height: 0;
+    border-left: 50vw solid transparent;
+    border-right: 50vw solid transparent;
+    border-top: 32px solid #fff;
+    margin: 0 auto;
+	}
+	.slide_go_button_container {
+		margin: 8px auto;
+		background: #02b5b2;
+    padding: 3px 74px;
+    border-radius: 4px;
+    color: #242834;
+		box-shadow: 2px 2px 2px rgba(0, 0, 0, 01);
+		width: 60px;
+		text-align: center;
+		transition: 0.5s;
+		&.orange {
+			background: #ff6a00;
+		}
+		&.pink {
+			background: #e31b6d;
+		}
+		&.green {
+			background: #A7CC46;
+		}
+		&:hover {
+			filter: brightness(120%);
+			box-shadow: 2px 2px 10px rgba(0, 0, 0, 01);
+		}
+	}
+	.work_innerData_content_container {
+    margin-top: 14px;
+    margin-right: 14px;
+	}
+	.work_innerData_container {
+		display: flex;
+		.work_innerData_image {
+			img {
+				image-rendering: pixelated;
+				border-radius: 0px;
+				height: 100px;
+				width: 130px;
+				margin-left: 6px;
+				box-shadow: -4px -4px 0px rgba(0, 0, 0, 1);
+			}
+		}
+		.work_innerData_content_title {
+			color: #e31b6d;
+			font-size: 18px;
+			font-weight: bold;
+			margin-left: 16px;
+		}
+	}
+	.slide_go_button {
+
+	}
+}
